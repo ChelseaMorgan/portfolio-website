@@ -4,7 +4,20 @@ Text Color: #4D4D4D
 Background Color: #F5F5F5
 White: #FFFFFF
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #4d4d4d;
+}
+
+body.index {
   background-color: #f5f5f5;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -93,6 +106,7 @@ a:active {
   text-transform: uppercase;
   border: 2px solid rgba(102, 173, 184, 0.8);
   box-shadow: none;
+  margin-bottom: 25px;
 }
 
 .button.contact:hover {
@@ -105,4 +119,121 @@ a:active {
   background-color: rgba(102, 173, 184, 0.5);
   border: 2px solid transparent;
   box-shadow: 2px 2px 8px rgba(77, 77, 77, 0.25);
+}
+
+header {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  width: 100%;
+}
+
+header.index {
+  background-color: white;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid rgba(77, 77, 77, 0.3);
+}
+
+#about.row {
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid rgba(77, 77, 77, 0.3);
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 125px;
+}
+
+.social {
+  max-width: 36px;
+}
+
+.aboutme {
+  max-width: 345px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(77, 77, 77, 0.8);
+}
+
+nav > ul > li > a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(77, 77, 77, 0.8);
+}
+
+#hero {
+  background-color: white;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 190px;
+}
+
+#contact {
+  text-align: center;
+}
+
+.heading {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top: 1.5px solid rgba(77, 77, 77, 0.3);
+  border-bottom: 1.5px solid rgba(77, 77, 77, 0.3);
+  text-align: center;
+  background-color: #f5f5f5;
 }

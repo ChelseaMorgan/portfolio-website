@@ -24,7 +24,7 @@
 <body>
     <header>
         <div>
-            <img src="img/logov1.svg" alt="Logo">
+            <img src="img/logov1.svg" alt="Logo" class="logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
@@ -35,83 +35,85 @@
         </div>
     </header>
     <main>
-        <div> <!--open about me heading-->
-            <h1>About Me</h1>
-        </div> <!--end about me heading-->
-
-        <div> <!--open about me content container-->
-            <div> <!--start all content wrapper-->
-                <picture>
-                    <source srcset="img/other/aboutme@1x.png" media="(max-width:767px)">
-                    <img src="img/other/aboutme@2x.png" alt="Photo of me">
-                </picture>
-                <div> <!--open row for columns-->
-                    <div> <!--open column 1-->
-                        <h2>My Story</h2>
-                        <p>I'm Chelsea! I'm a UX/UI designer based out of NYC aiming to craft solutions to make the
-                            digital world a more inclusive and user-friendly place. My journey into UX design was a bit
-                            unconventional. Originally a medical Speech- Language Pathologist by trade, I discovered the
-                            field of UX design through my experience with a variety of electronic medical record and
-                            billing systems required for my work, where I witnessed the impact that good - and bad -
-                            design can have on real-world outcomes. Now after transitioning into the field of UX design,
-                            I'm using my unique background to merge human-centered principles, functionality, and
-                            aesthetics to create accessible and inclusive digital solutions that just work.</p>
+        <div class="container"> <!--open all content-->
+            <div> <!--open about me heading-->
+                <h1 class="center">About Me</h1>
+            </div> <!--end about me heading-->
+    
+            <div> <!--open about me content container-->
+                <div class="center"> <!--open picture container-->
+                    <picture>
+                        <source srcset="img/other/aboutme@1x.png" media="(max-width:767px)">
+                        <img src="img/other/aboutme@2x.png" alt="Photo of me" class="aboutme">
+                    </picture>
+                </div> <!--end picture container-->
+                    <div id="about" class="row"> <!--open row for columns-->
+                        <div> <!--open column 1-->
+                            <h2>My Story</h2>
+                            <p>I'm Chelsea! I'm a UX/UI designer based out of NYC aiming to craft solutions to make the
+                                digital world a more inclusive and user-friendly place. My journey into UX design was a bit
+                                unconventional. Originally a medical Speech- Language Pathologist by trade, I discovered the
+                                field of UX design through my experience with a variety of electronic medical record and
+                                billing systems required for my work, where I witnessed the impact that good - and bad -
+                                design can have on real-world outcomes. Now after transitioning into the field of UX design,
+                                I'm using my unique background to merge human-centered principles, functionality, and
+                                aesthetics to create accessible and inclusive digital solutions that just work.</p>
                             <a href="files/cmorgan_cv2023.pdf" target="_blank" class="button">Download my resume</a>
-                    </div> <!--end column 1-->
-                    <div> <!--open column 2-->
-                        <h2>Skills &amp; Tools</h2>
-                        <div> <!--open skills&tools container-->
-                            <div> <!--open relevant skills list-->
-                                <h3>Relevant Skills</h3>
-                                <ul>
-                                    <li>Communication</li>
-                                    <li>User research &#40;competitive analysis, user interviews, data anlysis, etc.&#41;</li>
-                                    <li>User stories and personas</li>
-                                    <li>User flows</li>
-                                    <li>Journey maps</li>
-                                    <li>Sitemaps</li>
-                                    <li>Wireframing and prototyping</li>
-                                    <li>UI design</li>
-                                    <li>Style guides</li>
-                                    <li>Frontend</li>
-                                </ul>
-                            </div> <!--end relevant skills list-->
-                            <div> <!--open tools list-->
-                                <h3>Tools I Use</h3>
-                                <ul>
-                                    <li>Figma</li>
-                                    <li>Adobe XD</li>
-                                    <li>Balsamiq</li>
-                                    <li>Procreate</li>
-                                    <li>Adobe Illustrator</li>
-                                    <li>Marvel</li>
-                                </ul>
-                            </div><!--end tools list-->
-                        </div> <!--end skills&tools container-->
-                    </div> <!--end column 2-->
-                </div> <!--end row for columns-->
-            </div> <!--end all content wrapper-->
-        </div> <!--end about me content container-->
-        <footer id="contact">
-            <div>
-                <h2>Contact</h2>
-                <p>Want to discuss collaborations or opportunities? Get in touch!</p> 
-                <p>Phone: <a href="tel:+9089306255">(908) 930-6255</a></p>
-                <p>Prefer Email?</p>
-                <div><!--open email link-->
-                    <a href="mailto:chelsea.morgan704@gmail.com">Email me</a>
-                </div><!--end email link-->
+                        </div> <!--end column 1-->
+                        <div> <!--open column 2-->
+                            <h2>Skills &amp; Tools</h2>
+                            <div> <!--open skills&tools container-->
+                                <div> <!--open relevant skills list-->
+                                    <h3>Relevant Skills</h3>
+                                    <ul>
+                                        <li>Communication</li>
+                                        <li>User research &#40;competitive analysis, user interviews, data anlysis,
+                                            etc.&#41;</li>
+                                        <li>User stories and personas</li>
+                                        <li>User flows</li>
+                                        <li>Journey maps</li>
+                                        <li>Sitemaps</li>
+                                        <li>Wireframing and prototyping</li>
+                                        <li>UI design</li>
+                                        <li>Style guides</li>
+                                        <li>Frontend</li>
+                                    </ul>
+                                </div> <!--end relevant skills list-->
+                                <div> <!--open tools list-->
+                                    <h3>Tools I Use</h3>
+                                    <ul>
+                                        <li>Figma</li>
+                                        <li>Adobe XD</li>
+                                        <li>Balsamiq</li>
+                                        <li>Procreate</li>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Marvel</li>
+                                    </ul>
+                                </div><!--end tools list-->
+                            </div> <!--end skills&tools container-->
+                        </div> <!--end column 2-->
+                    </div> <!--end row for columns-->
+            </div> <!--end about me content container-->
+            <footer id="contact">
                 <div>
-                    <!--social media layout and placeholders-->
-                    <a href="https://www.linkedin.com/in/chelsea-rabinowitz-b06579100" target="_blank">
-                        <img src="img/linkedin.svg" alt="Linkedin logo linking to Linkedin profile">
-                    </a>
+                    <h2>Contact</h2>
+                    <p>Want to discuss collaborations or opportunities? Get in touch!</p>
+                    <p>Phone: <a href="tel:+9089306255">(908) 930-6255</a></p>
+                    <p>Prefer Email?</p>
+                    <div><!--open email link-->
+                        <a href="mailto:chelsea.morgan704@gmail.com" class="button contact">Email me</a>
+                    </div><!--end email link-->
+                    <div>
+                        <!--social media layout and placeholders-->
+                        <a href="https://www.linkedin.com/in/chelsea-rabinowitz-b06579100" target="_blank">
+                            <img src="img/linkedin.svg" alt="Linkedin logo linking to Linkedin profile" class="social">
+                        </a>
+                    </div>
+                    <p>Copyright Chelsea Morgan 2023</p>
                 </div>
-                <p>Copyright Chelsea Morgan 2023</p>
-            </div>
-        </footer>
-
+            </footer>
+        </div> <!--end all content-->
     </main>
-</body>
+    </body>
 
 </html>
