@@ -21,7 +21,7 @@
     <link rel="manifest" href="img/favicon/site.webmanifest">
 </head>
 
-<body>
+<body id="about">
     <header>
         <div>
             <img src="img/logov1.svg" alt="Logo" class="logo">
@@ -47,9 +47,9 @@
                         <img src="img/other/aboutme@2x.png" alt="Photo of me" class="aboutme">
                     </picture>
                 </div> <!--end picture container-->
-                    <div id="about" class="row"> <!--open row for columns-->
-                        <div> <!--open column 1-->
-                            <h2>My Story</h2>
+                    <div class="row"> <!--open row for columns-->
+                        <div class="col-lg-7"> <!--open column 1-->
+                            <h2 class="center">My Story</h2>
                             <p>I'm Chelsea! I'm a UX/UI designer based out of NYC aiming to craft solutions to make the
                                 digital world a more inclusive and user-friendly place. My journey into UX design was a bit
                                 unconventional. Originally a medical Speech- Language Pathologist by trade, I discovered the
@@ -58,12 +58,14 @@
                                 design can have on real-world outcomes. Now after transitioning into the field of UX design,
                                 I'm using my unique background to merge human-centered principles, functionality, and
                                 aesthetics to create accessible and inclusive digital solutions that just work.</p>
-                            <a href="files/cmorgan_cv2023.pdf" target="_blank" class="button">Download my resume</a>
+                            <div class="cv-button">
+                                <a href="files/cmorgan_cv2023.pdf" target="_blank" class="button">Download my resume</a>
+                            </div>
                         </div> <!--end column 1-->
-                        <div> <!--open column 2-->
-                            <h2>Skills &amp; Tools</h2>
-                            <div> <!--open skills&tools container-->
-                                <div> <!--open relevant skills list-->
+                        <div class="col-lg-5"> <!--open column 2-->
+                            <h2 class="center">Skills &amp; Tools</h2>
+                            <div class="skills"> <!--open skills&tools container-->
+                                <div class="col-md-6"> <!--open relevant skills list-->
                                     <h3>Relevant Skills</h3>
                                     <ul>
                                         <li>Communication</li>
@@ -79,7 +81,7 @@
                                         <li>Frontend</li>
                                     </ul>
                                 </div> <!--end relevant skills list-->
-                                <div> <!--open tools list-->
+                                <div class="col-md-6"> <!--open tools list-->
                                     <h3>Tools I Use</h3>
                                     <ul>
                                         <li>Figma</li>
