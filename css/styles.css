@@ -83,7 +83,8 @@ a:active {
   -webkit-text-fill-color: #4d4d4d;
   font-size: 1em;
   font-weight: 500;
-  padding: 10px;
+  text-decoration: none;
+  padding: 10px 15px;
   border-radius: 5px;
   box-shadow: 2px 2px 8px rgba(77, 77, 77, 0.25);
   transition: 0.2s;
@@ -121,6 +122,10 @@ a:active {
   box-shadow: 2px 2px 8px rgba(77, 77, 77, 0.25);
 }
 
+.heading .button {
+  margin-bottom: 25px;
+}
+
 header {
   background-color: #f5f5f5;
   text-align: center;
@@ -139,6 +144,7 @@ header.index {
 /* Layout styling */
 .skills {
   display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -157,6 +163,10 @@ header.index {
 #about.row {
   padding-bottom: 25px;
   border-bottom: 1.5px solid rgba(77, 77, 77, 0.3);
+}
+
+#mentr .row {
+  padding-bottom: 25px;
 }
 
 .center {
@@ -251,6 +261,90 @@ main {
   margin-bottom: 0;
 }
 
+.resume {
+  margin-bottom: 50px;
+}
+
+.affinity {
+  margin-bottom: 55px;
+}
+.break {
+  margin-bottom: 55px;
+}
+.list {
+  margin-top: -10px;
+}
+
+.listitem {
+  margin-top: -10px;
+}
+.process-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #4d4d4d;
+  color: #4d4d4d;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  transition: background-color 0.2s;
+}
+
+[class*="p"] {
+  flex: 33%
+}
+
+.circle:hover {
+  background-color:#4d4d4d;
+  color: white;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+div > div > a.step {
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+
+div > div > a.step:visited {
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+
+div > div > a.step:hover {
+  text-transform: uppercase;
+  color: rgba(77, 77, 77, 0.8);
+  text-decoration: none;
+}
+
+div > div > a.step:active {
+  text-transform: uppercase;
+  color: rgba(77, 77, 77, 0.8);
+}
+
+
 
 /* Medium devices (640px and larger) */
 
@@ -269,6 +363,15 @@ main {
 .col-md-6 {
   width: 50%;
 }
+
+.col-md-5 {
+  width: 41.66%;
+}
+
+.col-md-7 {
+  width: 58.33%;
+}
+
 [class*="col-"] {
   float: left;
   padding: 10px;
@@ -278,22 +381,48 @@ main {
   clear: both;
   display: table;
 }
+
 #about h3 {
   margin-top: 0;
 }
-
+.relev-skills {
+  margin-left: 55px;
+  margin-right: 30px;
 }
-.cv-button {
-  text-align: center;
+
+.tools {
+  margin-right: 75px;
+  padding-left: 100px
+}
+.skills {
+  flex-direction: row;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  flex: 1;
+  max-width: 300px;
+  margin: 15px;
+}
+
+[class*="p"] {
+  flex: 16.66%
+}
+
 }
 
 /* Large devices 1024px or larger) */
 
-
-
 @media only screen and (min-width: 1024px) {
   .skills {
-    flex-direction: column;
+    flex-direction: row;
   }
   .col-lg-5 h2,
   .col-lg-7 h2 {
@@ -302,6 +431,10 @@ main {
   .col-lg-7 {
     width: 58.33%;
   }
+  .col-lg-6 {
+    width: 50%;
+  }
+
   .col-lg-5 {
     width: 41.66%;
   }
@@ -310,8 +443,55 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
-  .cv-button {
-    text-align: left;
+  .relev-skills {
+    margin-left: 75px;
+    margin-right: 30px;
+  }
+  
+  .tools {
+    margin-right: 75px;
+    margin-left: 55px;
+  }
+
+  .listitem {
+    margin-bottom: 175px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .flex-container > div {
+    flex: 1;
+    max-width: 300px;
+    margin: 15px;
+  }
+
+  .process-list {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .step-container {
+    position: relative;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .step-container:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 75%;                      
+    width: calc(100% - 75px);          
+    height: 1px;          
+    background: #4d4d4d;
+    transform: translateY(-50%);
   }
 }
 
@@ -378,3 +558,4 @@ main {
   opacity: 1;
   transform: translateX(0);
 }
+

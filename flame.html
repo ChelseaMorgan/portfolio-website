@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" type="text/css"  href="css/styles.css">
 
     <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
@@ -23,10 +23,12 @@
 
 <body id="flame">
     <header>
-        <div>
-            <img src="img/logov1.svg" alt="Logo" class="logo">
+        <div class="container">
+            <a href="index.html">
+                <img src="img/logov1.svg" alt="Logo" class="logo">
+            </a>
             <nav>
-                <ul>
+                <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -37,20 +39,18 @@
     <main>
         <div class="container"> <!--open all project content-->
 
-            <div> <!--open project header-->
+            <div class="break"> <!--open project header-->
                 <h1 class="center">Flame Case Study</h1>
             </div> <!--end project header-->
-            <div> <!--open project overview section-->
-                <h3>Project Overview</h3>
-                <p> For my UI specialization course through CareerFoundry, I designed a responsive web fitness app, Flame.</p>
-            </div> <!--end project overview section-->
 
-            <div> <!--open row for 2 columns-->
-                <div> <!--open column 1 for text-->
+            <div class="row"> <!--open row for 2 columns-->
+                <div class="col-md-7 col-lg-7"> <!--open column 1 for text-->
+                    <h3>Project Overview</h3>
+                    <p> For my UI specialization course through CareerFoundry, I designed a responsive web fitness app, Flame.</p>
                     <h3>Context</h3>
                     <p>Getting into an exercise routine can be daunting for many people, especially those of us who have no working knowledge of gym equipment or limited fitness know-how. Additionally, finding routines that fit into our jam-packed schedules is tough. Therefore, the goal of Flame is to motivate people of all experience levels to get into a fitness routine customized to their schedule, skills, and interests.</p>
-                </div> <!--end column 1 for text-->
-                <div> <!--open column 2 for img-->
+                </div> <!--end coabout:blank#blockedlumn 1 for text-->
+                <div class="col-md-5 col-lg-5"> <!--open column 2 for img-->
                     <picture>
                         <source srcset="img/flame/flame_logo@1x.png" media="(max-width:767px)">
                         <img src="img/flame/flame_logo@2x.png" alt="Flame logo">
@@ -58,7 +58,7 @@
                 </div> <!--end column 2 for img-->
             </div> <!--end row 2 columns-->
 
-            <div> <!--open project specs section-->
+            <div class="flex-container"> <!--open project specs section-->
                 <div>
                     <h3>My Role</h3>
                     <ul>
@@ -83,22 +83,47 @@
             </div> <!--end project specs section-->
 
             <div> <!--open design process section-->
-                <div>
+                <div class="break">
                     <h3>The Design Process</h3>
                 </div>
 
-                <div>
-                    <ol>
-                        <li>Define</li>
-                        <li>Empathize</li>
-                        <li>Ideate</li>
-                        <li>Design</li>
-                        <li>Prototype</li>
-                    </ol>
+                <div class="process-list">
+                    <div class="step step-container">
+                        <a href="#define" class="step">
+                        <div class="circle">1</div>
+                        <h4 class>Define</h4>
+                        </a>
+                    </div>
+                    <div class="step step-container">
+                        <a href="#empathize" class="step">
+                        <div class="circle">2</div>
+                        <h4>Empathize</h4>
+                        </a>
+                    </div>
+                    <div class="step step-container">
+                        <a href="#ideate" class="step">
+                        <div class="circle">3</div>
+                        <h4>Ideate</h4>
+                        </a>
+                    </div>
+                    <div class="step step-container">
+                        <a href="#design" class="step">
+                        <div class="circle">4</div>
+                        <h4>Design</h4>
+                        </a>
+                    </div>
+                    <div class="step step-container">
+                        <a href="#prototype" class="step">
+                        <div class="circle">5</div>
+                        <h4>Prototype</h4>
+                        </a>
+                    </div>
+
                 </div>
+
             </div> <!--end design process section-->
 
-            <div class="heading">
+            <div class="heading" id="define">
                 <h1>Define</h1>
             </div>
 
@@ -115,7 +140,7 @@
                 </div>
             </div> <!--end define section-->
 
-            <div class="heading">
+            <div class="heading" id="empathize">
                 <h1>Empathize</h1>
             </div>
 
@@ -141,16 +166,16 @@
                 </div>
             </div> <!--end empathize section-->
 
-            <div class="heading">
+            <div class="heading" id="ideate">
                 <h1>Ideate</h1>
             </div>
 
             <div> <!--open ideate section-->
-                <div>
+                <div class="break">
                     <p>Given the essential features and the above user stories provided by the project brief, I created a user flow diagram to better visualize the screens that would be needed within the app in order to help users achieve their goals.</p>
                 </div>
 
-                <div>
+                <div class="break">
                     <picture>
                         <source srcset="img/flame/all_flows@1x.png" media="(max-width:767px)">
                         <img src="img/flame/all_flows@2x.png" alt="flow chart showing all user flows.">
@@ -158,7 +183,7 @@
                 </div>
             </div> <!--end ideate section-->
 
-            <div class="heading">
+            <div class="heading" id="design">
                 <h1>Design</h1>
             </div>
 
@@ -168,8 +193,8 @@
                     <p>Next, I used Balsamiq to create low-fidelity wireframes and prototypes to quickly map out the main functions of the app. I designed with a mobile-first approach, expanding to larger breakpoints once I had established my basic mobile designs.</p>
                 </div>
 
-                <div>
-                    <h3>Mobile Wireframes</h3>
+                <div class="center">
+                    <h4>Mobile Wireframes</h4>
                 </div>
 
                 <div>
@@ -179,8 +204,8 @@
                     </picture>
                 </div>
 
-                <div>
-                    <h3>Expanding to Larger Breakpoints</h3>
+                <div class="center">
+                    <h4>Expanding to Larger Breakpoints</h4>
                 </div>
 
                 <div>
@@ -195,7 +220,7 @@
                     <p>It was time to start translating my low-fidelity designs into mid-fidelity wireframes in order to btegin breathing some life into the app. At this point, I established my typographic styles, added some basic UI elements to my screens, and used common UI design patterns to inform the overall form and function of the app.</p>
                 </div>
 
-                <div>
+                <div class="break">
                     <picture>
                         <source srcset="img/flame/midfi_mobile@1x.png" media="(max-width:767px)">
                         <img src="img/flame/midfi_mobile@2x.png" alt="mid-fidelity wireframes showing 3 features: start exercise from the exercise info screen, rearrange order of exercises on the auto generate workout preview screen, and rearrange order of exercises on the build your own workout preview.">
@@ -238,8 +263,9 @@
                     </picture>
                 </div>
 
-                <div>
-                    <p>Click <a href="files/flame_style_guide.pdf" target="_blank">here</a> to view the full style guide!</p>
+                <div class="center break">
+                    <h4>Click below to see the full style guide:</h4>
+                    <a href="files/flame_style_guide.pdf" target="_blank" class="button">Flame Style Guide</a>
                 </div>
 
                 <div>
@@ -253,28 +279,28 @@
                     </picture>  
                 </div>
 
-                <div>
+                <div class="break">
                     <picture>
                         <source srcset="img/flame/mockup_desktop@1x.jpg" media="(max-width:767px)">
                         <img src="img/flame/mockup_desktop@2x.jpg" alt="Presentation mockup photo showing woman looking at laptop showing the progress log screen.">
                     </picture>  
                 </div>
 
-                <div>
+                <div class="break">
                     <picture>
                         <source srcset="img/flame/mockup_tablet@1x.jpg" media="(max-width:767px)">
                         <img src="img/flame/mockup_tablet@2x.jpg" alt="Mockup of a tablet on a table next to yellow headphones and a glass of water showing the explore exercises screen.">
                     </picture>  
                 </div>
 
-                <div>
+                <div class="break">
                     <picture>
                         <source srcset="img/flame/mobile_mockup@1x.jpg" media="(max-width:767px)">
                         <img src="img/flame/mobile_mockup@2x.jpg" alt="Mockup showing someone holding a phone showing the exercise info screen for the russian twists exercise.">
                     </picture>  
                 </div>
 
-                <div>
+                <div class="break">
                     <picture>
                         <source srcset="img/flame/mockup_desktop_and_mobile@1x.jpg" media="(max-width:767px)">
                         <img src="img/flame/mockup_desktop_and_mobile@2x.jpg" alt="Mockup showing smiling person at their laptop with a phone in their hand. The laptop shows the explore exercise screen while the phone shows the progress log.">
@@ -282,30 +308,31 @@
                 </div>
             </div> <!--end design section-->
 
-            <div class="heading">
+            <div class="heading" id="prototype">
                 <h1>Prototype</h1>
             </div>
 
             <div> <!--open prototype section-->
-                <div>
+                <div class="break">
                     <h2>Flame Interface in Action</h2>
                     <p>Check out the brief video demo videos below to see Flame in action!</p>
                 </div>
 
-                <div>
-                    <video width="640px" height="360px" controls>
-                        <source src="img/flame/BYO workout.mov" type="video/mp4">
+            <div class="row">
+                <div class="col-lg-6 break">
+                    <video width="500px" height="360px" controls>
+                        <source src="img/flame/byo_workout.mov" type="video/mp4">
                    </video>
                 </div>
 
-                <div>
-                    <video width="640px" height="360px" controls>
-                        <source src="img/flame/Log in + explore exercises.mov" type="video/mp4">
+                <div class="col-lg-6">
+                    <video width="500px" height="360px" controls>
+                        <source src="img/flame/login_explore_exercises.mov" type="video/mp4">
                    </video>
                 </div>
-
-                <div>
-                    <p>Click <a href="https://www.figma.com/proto/ola1fBvwMqUKbbLb9NMMcQ/Flame-(Fitted)-Workspace?page-id=7%3A2072&type=design&node-id=35-3644&viewport=890%2C436%2C0.07&t=O5ua9opFNov9c72J-1&scaling=scale-down&starting-point-node-id=35%3A3644&mode=design" target="_blank">here</a> to try the prototype for yourself!</p>
+            </div>
+                <div class="center break">
+                    <a href="https://www.figma.com/proto/ola1fBvwMqUKbbLb9NMMcQ/Flame-(Fitted)-Workspace?page-id=7%3A2072&type=design&node-id=35-3644&viewport=890%2C436%2C0.07&t=O5ua9opFNov9c72J-1&scaling=scale-down&starting-point-node-id=35%3A3644&mode=design" target="_blank" class="button">Click here to try out the Flame Prototype!</a>
                 </div>
             </div> <!--end prototype section-->
 
@@ -321,7 +348,7 @@
                     <h3>Next Steps</h3>
                 </div>
 
-                <div>
+                <div class="break">
                     <ol>
                         <li>Conduct first round of usability testing to validate current designs and identify any areas of improvement.</li>
                         <li>Iterate on designs based on user feedback.</li>
@@ -330,7 +357,7 @@
                 </div>
             </div> <!--end learnings and future directions section-->
 
-            <div>
+            <div class="heading break">
                 <h2>Thank you for reading my case study!</h2>
             </div>
         </div> <!--end all project content-->
