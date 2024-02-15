@@ -108,6 +108,8 @@ a:active {
   border: 2px solid rgba(102, 173, 184, 0.8);
   box-shadow: none;
   margin-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .button.contact:hover {
@@ -139,6 +141,27 @@ header {
 
 header.index {
   background-color: white;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 40px; /* Place the button at the bottom of the page */
+  right: 40px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #A2CAD0;
+  color: #393939;
+  -webkit-text-fill-color: #393939;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px 25px;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  box-shadow: 2px 2px 8px rgba(77, 77, 77, 0.50);
+}
+
+#myBtn:hover {
+  background-color: rgba(102, 173, 184, 0.6); 
 }
 
 /* Layout styling */
@@ -361,6 +384,28 @@ div > div > a.step:active {
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 30rem;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid #393939;
+  resize: vertical;
+}
+.button.contact[type="submit"] {
+  width: auto;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
 /* Medium devices (640px and larger) */
 
 @media only screen and (min-width: 641px) {
@@ -441,7 +486,9 @@ div > div > a.step:active {
 [class*="p"] {
   flex: 16.66%
 }
-
+form {
+  width: 34rem;
+}
 }
 
 /* Large devices 1024px or larger) */
@@ -519,6 +566,10 @@ div > div > a.step:active {
     background: #4d4d4d;
     transform: translateY(-50%);
   }
+  form {
+    width: 34rem;
+  }
+  
 }
 
 /* X-large devices (1440px or larger) */
